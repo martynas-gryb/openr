@@ -23,7 +23,7 @@
 
 namespace openr::fbnl {
 
-constexpr uint16_t kMaxNlPayloadSize{4096};
+constexpr uint16_t kMaxNlPayloadSize{8192};
 
 /**
  * Data structure representing a netlink message, either to be sent or received.
