@@ -27,7 +27,7 @@ namespace openr::fbnl {
 using NetlinkEvent = std::variant<fbnl::Link, fbnl::IfAddress, fbnl::Neighbor>;
 
 // Receive socket buffer for netlink socket
-constexpr uint32_t kNetlinkSockRecvBuf{32 * 1024 * 1024};
+constexpr uint32_t kNetlinkSockRecvBuf{1 * 1024 * 1024};
 
 // Maximum number of in-flight messages. `kMinIovMsg` indicates the soft
 // requirement for sending bufferred messages.
